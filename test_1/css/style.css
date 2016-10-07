@@ -1,0 +1,85 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    background: #b5a282;
+    color: black;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;    
+    -webkit-flex-direction: column;
+       -moz-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+header {
+    -webkit-flex: 0 0 30px;
+       -moz-flex: 0 0 30px;
+        -ms-flex: 0 0 30px;
+            flex: 0 0 30px;
+    border: 1px dashed aqua;
+}
+
+#main {
+    -webkit-flex: 1 100%;
+       -mox-flex: 1 100%;
+        -ms-flex: 1 100%;
+            flex: 1 100%;
+    display: -webkit-flex;
+    display: -mox-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+       -moz-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+#inputs {
+    border: 1px dashed aqua;
+    -webkit-flex: 0 150px;
+       -moz-flex: 0 150px;
+        -ms-flex: 0 150px;
+            flex: 0 150px;
+
+}
+
+#outputs {
+    border: 1px dashed aqua;
+    -webkit-flex: 1 100%;
+       -mox-flex: 1 100%;
+        -ms-flex: 1 100%;
+            flex: 1 100%;
+    display: -webkit-flex;
+    display: -mox-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+       -moz-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+}
+
+#goals, #fv-calc, #rate-calc {
+    flex: 1 100%;
+    border: 1px dashed green;
+}
+
+/* Large Screens */
+@media all and (min-width: 1000px) {
+    #goals, #fv-calc, #rate-calc {
+        flex: 1 auto;
+    }
+    
+    #goals { order: 1; }
+    #fv-calc { order: 1; }
+    #rate-calc { order: 1; }
+}
+
