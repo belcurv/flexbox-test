@@ -1,0 +1,94 @@
+/*------------------------------------*\
+    RESET
+\*------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0b1 | 201101 
+    NOTE:WORK IN PROGRESS
+    USE WITH CAUTION AND TEST WITH ABANDON */
+
+html,body,div,span,applet,object,iframe,
+h1,h2,h3,h4,h5,h6,p,blockquote,pre,
+a,abbr,acronym,address,big,cite,code,
+del,dfn,em,img,ins,kbd,q,s,samp,
+small,strike,strong,sub,sup,tt,var,
+b,u,i,center,
+dl,dt,dd,ol,ul,li,
+fieldset,form,label,legend,
+table,caption,tbody,tfoot,thead,tr,th,td,
+article,aside,canvas,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section,summary,
+time,mark,audio,video{
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    font:inherit;
+    vertical-align:baseline;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
+
+body {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1240px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f6f6f6;
+}
+
+/* Typography */
+
+h1 {
+	font-size: 28px;
+	font-weight: 300;
+	flex: 1;
+}
+
+h5 {
+	font-weight: 500;
+	line-height: 1.7em;
+}
+
+h6 {
+	color: #666;
+	font-size: 14px;
+}
+
+.product-filter {
+    display: flex;
+    padding: 30px 0;
+}
+
+
+/* flex-grow: 1 expands the flex container to full width
+ * and expands itself to fill the remaining space, 
+ * which right-sligns the sorting drop-downs */
+.product-filter h1 {
+    flex-grow: 1;
+}
+
+
+/* horizontally align child elements of `.sort` container
+ * by making `.sort` a flex container too */
+.sort {
+    display: flex;
+    align-self: flex-end;
+}
+
+.collection-sort {
+    display: flex;
+    flex-direction: column;
+}
+
+.collection-sort:first-child {
+    padding-right: 20px;
+}
+
+label {
+	color: #666;
+	font-size: 10px;
+	font-weight: 500;
+	line-height: 2em;
+	text-transform: uppercase;
+}
