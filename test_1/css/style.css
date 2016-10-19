@@ -15,7 +15,7 @@ body {
     flex-direction: column;
 }
 
-header, #main, #inputs, #outputs, #goals, #fv-calc, #rate-calc {
+header, footer, #main, #inputs, #outputs, #goals, #fv-calc, #rate-calc {
     box-sizing: border-box;
 }
 
@@ -28,7 +28,7 @@ header {
 }
 
 #main {
-    flex: 1 100%;
+    flex: 1 0 auto;
     display: flex;
     flex-direction: column;
 }
@@ -46,6 +46,37 @@ header {
 #goals, #fv-calc, #rate-calc {
     flex: 0 0 100%;
     padding: 0 1em;
+}
+
+footer {
+    flex: none;
+/*    display: block;*/
+/*    box-sizing: border-box;*/
+    padding: 1.5rem;
+    background: #404040;
+    color: #999;
+    font-size: 0.85em;
+    text-align: center;
+}
+
+.footer-credit {
+    display: inline-block;
+    margin: 0 2em;
+    vertical-align: middle;
+}
+
+.footer-social {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+footer a {
+    color: #e5e5e5;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
 
 /* Large Screens */
