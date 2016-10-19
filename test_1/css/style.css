@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
+
 html, body {
     height: 100%;
 }
@@ -5,7 +7,7 @@ html, body {
 body {
     margin: 0px;
     padding: 0px;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Roboto', 'Arial', sans-serif;
     font-size: 14px;
     background: #b5a282;
     color: black;
@@ -17,9 +19,12 @@ header, #main, #inputs, #outputs, #goals, #fv-calc, #rate-calc {
     box-sizing: border-box;
 }
 
+.border {
+    border: 1px dashed aqua;
+}
+
 header {
     flex: 0 0 30px;
-    border: 1px dashed aqua;
 }
 
 #main {
@@ -29,12 +34,10 @@ header {
 }
 
 #inputs {
-    border: 1px dashed aqua;
     flex: 0 150px;
 }
 
 #outputs {
-    border: 1px dashed aqua;
     flex: 1 100%;
     display: flex;
     flex-flow: row wrap;
@@ -42,8 +45,7 @@ header {
 
 #goals, #fv-calc, #rate-calc {
     flex: 0 0 100%;
-    border: 1px dashed green;
-    padding: 0 1em 1em;
+    padding: 0 1em;
 }
 
 /* Large Screens */
