@@ -49,7 +49,7 @@ header {
 }
 
 /* Large Screens */
-@media all and (min-width: 1000px) {
+@media all and (min-width: 960px) {
     #goals, #fv-calc, #rate-calc {
         flex: 0 0 33.3333%;
     }
