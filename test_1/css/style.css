@@ -27,6 +27,7 @@ header, footer, #main, #inputs, #outputs, #goals, #fv-calc, #rate-calc {
     padding: 5px;
     background: #FFF;
     border-left: 8px solid #404040;
+/*    margin: 0;*/
 }
 
 header {
@@ -43,7 +44,7 @@ header {
 }
 
 #inputs {
-    flex: 0 150px;
+    flex: 0;
     padding: 0 1em;
 }
 
